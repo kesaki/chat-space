@@ -7,8 +7,8 @@
 |name|string|null: false|
 
 ### Association
-- has_many groups, through: groups_users
-- has_many posts
+- has_many :groups, through :groups_users
+- has_many :posts
 
 ## groups_usersテーブル
 
@@ -24,12 +24,12 @@
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null:false, foreign_key: true|
+|id|integer|null: false, foreign_key: true|
 |name|string|null: false|
 
 
 ### Association
-- has_many :users, through: groups_users
+- has_many :users, through :groups_users
 - has-many :posts
 
 ## postsテーブル
@@ -40,5 +40,5 @@
 |url|string|null: true|
 
 ### Association
--belongs_to user
--belongs_to group
+-belongs_to :user
+-belongs_to :group
