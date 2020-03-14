@@ -25,7 +25,7 @@
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false unique: true|
+|id|integer|null: false, unique: true|
 |name|string|null: false|
 
 
