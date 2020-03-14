@@ -38,7 +38,7 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|text|string||
+|text|string|
 |image|string|
 
 ### Association
