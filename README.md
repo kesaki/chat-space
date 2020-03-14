@@ -3,8 +3,9 @@
 ## userテーブル
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false, foreign_key: true|
+|id|integer|null: false unique: true|
 |name|string|null: false|
+|email|string|null: false, unique: true|
 
 ### Association
 - has_many :groups, through :groups_users
@@ -24,7 +25,7 @@
 ## groupテーブル
 |Column|Type|Options|
 |------|----|-------|
-|id|integer|null: false, foreign_key: true|
+|id|integer|null: false unique: true|
 |name|string|null: false|
 
 
@@ -37,7 +38,7 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |text|string|null: true|
-|url|string|null: true|
+|image|string|null: true|
 
 ### Association
 -belongs_to :user
