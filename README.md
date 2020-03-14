@@ -7,8 +7,8 @@
 |name|string|null: false|
 
 ### Association
-_ has_many groups, through: groups_users
-_ has_many posts
+- has_many groups, through: groups_users
+- has_many posts
 
 ## groups_usersテーブル
 
@@ -40,5 +40,5 @@ _ has_many posts
 |url|string|null: true|
 
 ### Association
-belongs_to user
-belongs_to group
+-belongs_to user
+-belongs_to group
