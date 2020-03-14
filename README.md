@@ -30,7 +30,7 @@
 
 ### Association
 - has_many :users, through :groups_users
-- has-many :posts
+- has_many :posts
 
 ## postsテーブル
 |Column|Type|Options|
