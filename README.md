@@ -37,8 +37,9 @@
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
-|text|string|null: true|
-|image|string|null: true|
+|group_id|integer|null: false, foreign_key: true|
+|text|string||
+|image|string|
 
 ### Association
 - belongs_to :user
