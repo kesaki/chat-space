@@ -28,12 +28,11 @@
 |id|integer|null: false, unique: true|
 |name|string|null: false|
 
-
 ### Association
 - has_many :users, through :groups_users
 - has_many :posts
 
-## postsテーブル
+## postテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
