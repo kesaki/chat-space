@@ -1,0 +1,42 @@
+
+.group-info
+  .group-info__left
+    .group-info__left__current-group
+      Group
+    .group-info__left__member-list
+      Member : kawasaki
+
+  .group-info__right
+    .group-info__right__edit
+      Edit
+
+
+.message-list
+  .message-list__box
+    .message-list__box__info
+      .message-list__box__info__member-name
+        kawasaki
+      .message-list__box__info__time-stomp
+        2020/01/01(Mom) 10:11:00
+    .message-list__box__text
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis dolores reiciendis totam saepe, praesentium veniam aliquam delectus recusandae harum! Nobis vero totam possimus laboriosam veniam in ipsa natus dolorem ab!
+  .message-list__box
+    .message-list__box__info
+      .message-list__box__info__member-name
+        kawaguchi
+      .message-list__box__info__time-stomp
+        2020/03/01(Mom) 10:11:00
+    .message-list__box__text
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ducimus sint repudiandae, nesciunt praesentium dolores quo vel inventore, et, vero optio quod nemo. Soluta nihil odit voluptatibus iste repellat eveniet?
+
+
+
+.form
+  %form.form__new-message
+    .form__new-message__box
+      %input{type: "text", class: "form__new-message__box__text", placeholder: "type a message"}
+      %label{class: "form__new-message__box__icon"}
+        =icon('fas', 'image')
+        %input{type: "file", class: "form__new-message__box__icon__file"}
+    %input{type: "submit" , class: "form__new-message__send-btn", value: "Send"}
+  
